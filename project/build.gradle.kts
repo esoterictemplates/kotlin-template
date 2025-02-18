@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.com.intellij.util.text.VersionComparatorUtil
+import pl.allegro.tech.build.axion.release.domain.scm.ScmPosition
 import java.util.Calendar
 import java.util.jar.Attributes
 
@@ -103,7 +104,7 @@ dokka {
 
     dokkaSourceSets.main {
         sourceLink {
-            val remoteVersion = if ((version as String).endsWith(VersionComparatorUtil.VersionTokenType.SNAPSHOT.name)) "main" else version
+            val remoteVersion = if ((version as String).endsWith(VersionComparatorUtil.VersionTokenType.SNAPSHOT.name)) scmVersion.scmPosition.branch else version
 
             localDirectory.set(File(property("kotlin.directory") as String))
             remoteUrl("${property("source.url.prefix")}${remoteVersion}/${localDirectory.get().asFile.relativeTo(rootProject.rootDir)}")
