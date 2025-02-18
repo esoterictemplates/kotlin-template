@@ -1,5 +1,4 @@
 import org.jetbrains.kotlin.com.intellij.util.text.VersionComparatorUtil
-import pl.allegro.tech.build.axion.release.domain.scm.ScmPosition
 import java.util.Calendar
 import java.util.jar.Attributes
 
