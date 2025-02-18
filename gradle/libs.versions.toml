@@ -1,4 +1,7 @@
 [versions]
+# Java
+java = "21"
+
 # Libraries
 # Utility
 utility = "1.1.1"

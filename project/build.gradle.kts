@@ -44,7 +44,7 @@ dependencies {
 
 // Apply a specific Java toolchain to ease working on different environments.
 kotlin {
-    jvmToolchain((property("java.version") as String).toInt())
+    jvmToolchain(libs.versions.java.get().toInt())
 }
 
 java {
