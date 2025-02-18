@@ -3,10 +3,10 @@
 java = "21"
 
 # Libraries
-# Utility
+## Utility
 utility = "1.1.1"
 
-# Test
+## Test
 junit-jupiter-engine = "5.11.1"
 
 kotlin-mock = "1.13.16"
