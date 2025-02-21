@@ -9,7 +9,7 @@ on:
       - gh-pages
 
 jobs:
-  coverage:
+  report:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -25,5 +25,7 @@ jobs:
           distribution: 'temurin'
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
+      - name: Create test report
+        run: gradle jacocoTestReport
       - name: Verify test coverage
         run: gradle jacocoTestCoverageVerification
