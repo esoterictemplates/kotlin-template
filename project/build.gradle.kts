@@ -74,6 +74,10 @@ tasks {
         useJUnitPlatform()
     }
 
+    jacocoTestReport {
+        dependsOn(test)
+    }
+
     jacocoTestCoverageVerification {
         dependsOn(test)
 
