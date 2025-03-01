@@ -39,6 +39,13 @@ ehthumbs_vista.db
 ### macOS search index
 .Spotlight-V100
 
+### IntelliJ IDEA cache
+
+#### Auto-imported files
+.idea/modules.xml
+.idea/modules/
+*.iml
+
 ## Lock files
 *.lock
 
