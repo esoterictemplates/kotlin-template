@@ -2,6 +2,16 @@ import org.jetbrains.kotlin.com.intellij.util.text.VersionComparatorUtil
 import java.util.Calendar
 import java.util.jar.Attributes
 
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath(libs.plugins.obfuscator.get().toString())
+    }
+}
+
 plugins {
     application // Adds support for building a CLI application.
 

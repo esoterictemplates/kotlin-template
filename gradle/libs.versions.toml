@@ -6,6 +6,9 @@ java = "21"
 ## Utility
 utility = "1.1.1"
 
+## Build
+obfuscator = "7.6.1"
+
 ## Test
 junit-jupiter-engine = "5.11.1"
 
@@ -37,5 +40,6 @@ kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "plugin-kotlin-jvm
 release-axion = { id = "pl.allegro.tech.build.axion-release", version.ref = "plugin-release-axion" }
 
 shadow = { id = "com.gradleup.shadow", version.ref = "plugin-shadow" }
+obfuscator = { id = "com.guardsquare:proguard-gradle", version.ref = "obfuscator" }
 
 dokka = { id = "org.jetbrains.dokka", version.ref = "plugin-dokka" }
