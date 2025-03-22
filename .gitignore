@@ -195,6 +195,7 @@ secrets.json
 
 ## IntelliJ IDEA workspace
 *.iws
+.idea/
 
 ## macOS icons
 Icon?
